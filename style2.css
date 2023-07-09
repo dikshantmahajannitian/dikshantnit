@@ -1,0 +1,32 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: linear-gradient(white , #1d2b20);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 30px 10px;
+}
+nav li a:hover{
+    color:rgb(158, 158, 233);
+    font-size: 1.04rem;
+}
+body{
+    background: linear-gradient(rgba(0,0,0.5), #070807b5), url("resturant.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

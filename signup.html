@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      text-align: center;
+      width: 600px;
+      margin: 160px auto;
+      padding: 20px;
+      border: 5px solid black;
+      border-radius: 5px;
+      background: linear-gradient(white, rgba(0, 0, 255, 0.241));
+    }
+    h1{
+      text-align: center;
+      font-size: small;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script >
+    document.getElementById("submitbtn").addEventListener("click", function() {
+    var email = document.getElementById("email-input").value;
+    var password = document.getElementById("password-input").value;
+  
+    // Replace the following condition with your actual validation logic
+    if (email === "example@example.com" && password === "password123") {
+      // Redirect to the main page
+      window.location.href = "index.html";
+    } else {
+      // Display error message
+      alert("Wrong email or password entered!");
+    }
+  });
+     
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+    <form>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" id="email-input" name="email" placeholder="Email" required>
+      <input type="password" id="password-input" name="password" placeholder="Password" required maxlength="12" minlength="5">
+      <input type="password" id="password-input2" name="confirm password" placeholder="confirm passworsd" required maxlength="12" minlength="5">
+      <h0>Enter Your mobile number</h0>
+      <input type="tel" id="mobileno" name="mobileno" placeholder="mobile number " required maxlength="11" minlength="0">
+      <br><br>
+      <div>
+      <h1 id="text">Please Give the date for reservation of table or rooms</h1>
+      <input type="date">
+      </div>
+      <br>
+      <br>
+      
+     
+      <button type="submit" id="submitbtn">Sign up</button>
+      
+    </form>
+  </div>
+</body>
+<footer>
+  <div class="container">
+  <div class="footer">
+      <div class="footer-first">
+          <h1>Udta Punjab Hotel</h1>
+      </div>
+      <div class="footer-second">
+        <h2>Contact us #11111111</h2>
+      </div>
+      <div class="footer-third">
+        <h3>Email At udtapunjabhotel@gmail.com</h3>
+      </div>
+      <div class="footer-fourth">
+        for delivery can contact us
+      </div>
+  </div>
+  <div class="footer-rights">
+    <p>&copy; 2023 Udta punjab hotel. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+</html>
